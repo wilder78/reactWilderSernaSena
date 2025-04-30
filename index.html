@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Icon link on the tab. --//-- Enlace de icono en la pestaña. -->
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+  <!-- Page title. --//--Titulo de la pagina. -->
+  <title>Watch Repair</title>
+
+  <!-- Route connecting to Bulma's bookstore. --//-- Ruta de enlace con la libreria de Bulma. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.navbar-burger');
+      const menu = document.getElementById(burger.dataset.target);
+
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    });
+  </script>
+</body>
+
+</html>
