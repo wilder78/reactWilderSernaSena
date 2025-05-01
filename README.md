@@ -1,3 +1,7 @@
+# Inicio del proyecto de relojes.
+
+En esta página estaremos desarrollando el diseño de un sitio web para una tienda de relojes, donde se ofrecen servicios de reparación, venta de relojes y productos relacionados.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

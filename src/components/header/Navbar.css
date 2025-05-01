@@ -1,0 +1,13 @@
+/* Navegation bar Navbar. --//-- Barra de navegación navbar. */
+
+.navbar {
+  background-color: rgb(212, 175, 55);
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+nav img {
+  margin: 10px;
+}
