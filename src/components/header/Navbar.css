@@ -2,6 +2,10 @@
 
 .navbar {
   background-color: rgb(212, 175, 55);
+  min-height: 70px;
+  /* Altura mínima */
+  padding: 10px 20px;
+  /* Espaciado vertical y horizontal */
 }
 
 .navbar-collapse {
@@ -9,5 +13,5 @@
 }
 
 nav img {
-  margin: 10px;
+  margin: 2px;
 }
