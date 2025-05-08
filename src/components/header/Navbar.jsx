@@ -1,37 +1,6 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import logo from "/image/LogoMs2.png"; // ruta directa para Vite
 import "./Navbar.css";
-
-// Componente para el logo de la marca
-function BrandLogo() {
-  return (
-    <NavLink
-      to="/"
-      className="navbar-brand d-flex align-items-center gap-2"
-      aria-label="Página principal WM. Watch Repair"
-    >
-      <img src={logo} width="40" alt="Logo WM Watch Repair" />
-      WM. Watch Repair
-    </NavLink>
-  );
-}
-
-// Componente reutilizable para los ítems de navegación
-function NavItem({ to, label }) {
-  return (
-    <li className="nav-item">
-      <NavLink
-        to={to}
-        className={({ isActive }) =>
-          `nav-link ${isActive ? "active fw-bold" : ""}`
-        }
-      >
-        {label}
-      </NavLink>
-    </li>
-  );
-}
+import NavItem from "./ItemsNavbar/NavItem";
+import BrandLogo from "../BrandLogo/BrandLogo";
 
 function Navbar() {
   const links = [

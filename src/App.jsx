@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "./components/header/Navbar";
-import Footer from "./components/footer/Footer";
+import Navbar from "./components/Header/Navbar";
+import Footer from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/home/Home";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (

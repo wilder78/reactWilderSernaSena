@@ -1,8 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../../public/image/LogoMs2.png";
 import "./Footer.css";
 import FootItem from "./ItemsFooter/FootItem";
+import BrandLogo from "../BrandLogo/BrandLogo";
 
 function Footer() {
   return (
@@ -11,11 +10,7 @@ function Footer() {
         <div className="row p-5 text-white">
           {/* Sección de Logo y Descripción */}
           <div className="col-sm-12 col-md-4 col-lg-4">
-            <Link className="navbar-brand brand-logo" to="/">
-              <img src={logo} width="40" alt="Logo WM. Watch Repair" />
-              <span>WM. Watch Repair</span>
-            </Link>
-
+            <BrandLogo />
             <p className="text-justify">
               En WM. Watch Repair nos especializamos en la importación,
               reparación y mantenimiento de relojes. Ofrecemos servicios,

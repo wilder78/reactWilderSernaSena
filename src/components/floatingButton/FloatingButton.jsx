@@ -1,5 +1,4 @@
-// FloatingButton.jsx
-import React from "react";
+// FloatingButton --/-- Boton flotante
 import "./FloatingButton.css";
 
 function FloatingButton() {
