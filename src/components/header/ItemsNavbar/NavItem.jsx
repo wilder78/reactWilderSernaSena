@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom";
 
 // Componente reutilizable para los ítems de navegación
-function NavItem({ to, label }) {
+function NavItem({ to, label, className = "" }) {
   return (
     <li className="nav-item">
       <NavLink
         to={to}
         className={({ isActive }) =>
-          `nav-link ${isActive ? "active fw-bold" : ""}`
+          `nav-link ${className} ${isActive ? "active fw-bold" : ""}`
         }
       >
         {label}
@@ -15,7 +15,10 @@ function NavItem({ to, label }) {
     </li>
   );
 }
-// function NavItem({ to, label }) {
+
+export default NavItem;
+
+// function NavItem({ to, label, className = "" }) {
 //   return (
 //     <li className="nav-item">
 //       <NavLink
@@ -29,5 +32,3 @@ function NavItem({ to, label }) {
 //     </li>
 //   );
 // }
-
-export default NavItem;

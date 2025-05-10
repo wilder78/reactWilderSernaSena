@@ -1,32 +1,16 @@
 import "./Navbar.css";
 import NavItem from "./ItemsNavbar/NavItem";
 import BrandLogo from "../BrandLogo/BrandLogo";
+import ButtonToggler from "./ItemsNavbar/ButtonToggler";
+import links from "./ItemsNavbar/Navegation";
+// import { navigationLinks as links } from "../NavigationLinks/NavigationLinks";
 
 function Navbar() {
-  const links = [
-    { to: "/", label: "Inicio" },
-    { to: "/services", label: "Servicios" },
-    { to: "/products", label: "Productos" },
-    { to: "/contact", label: "Contáctanos" },
-    { to: "/about", label: "Nosotros" },
-  ];
-
   return (
     <nav className="navbar navbar-expand-md">
       <div className="container">
         <BrandLogo />
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar-toggler"
-          aria-controls="navbar-toggler"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-
+        <ButtonToggler />
         <div className="collapse navbar-collapse" id="navbar-toggler">
           <ul className="navbar-nav ms-auto d-flex align-items-center">
             {links.map((link, index) => (

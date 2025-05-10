@@ -1,50 +1,76 @@
-/* Footer --/-- Pie de pagina */
+/* --- Estilos generales del footer --- */
 footer {
-    min-height: 250px;
-    background-color: #1b1b32;
+  min-height: 250px;
+  background-color: #1b1b32;
+  color: white;
+  padding-top: 2rem;
 }
 
-footer img {
-    margin: 2px;
-}
-
+/* Logo de la marca */
 .brand-logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
+/* Imagen del logo */
+footer img {
+  margin: 2px;
+  max-width: 100%;
+  height: auto;
+}
 
+/* Texto justificable */
+footer p {
+  text-align: justify;
+}
+
+/* Sección de redes sociales */
+.iconos-redes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 1rem 0;
+}
+
+/* Estilo de cada ícono (enlace) */
 .iconos-redes a {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2px;
-    margin: 10px;
-    border: 3px solid white;
-    border-radius: 50%;
-    transition: all 0.2s ease-in;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
 }
 
+/* Ícono interior */
 .iconos-redes i {
-    color: white;
-    font-size: 1.5rem;
-    transition: all 0.2s ease-in;
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
+/* Hover */
 .iconos-redes a:hover {
-    background-color: white;
-    border: 2px solid rgb(13, 110, 253);
+  background-color: white;
+  border-color: rgb(13, 110, 253);
 }
 
 .iconos-redes a:hover i {
-    color: black;
+  color: black;
 }
 
+/* Sección de copyright */
 .copyright {
-    font-size: 15px;
-    color: #aeaeae;
-    padding: 10px;
+  font-size: 0.9rem;
+  color: #aeaeae;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #444;
+  margin-top: 1rem;
 }
