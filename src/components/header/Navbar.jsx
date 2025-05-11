@@ -3,7 +3,6 @@ import NavItem from "./ItemsNavbar/NavItem";
 import BrandLogo from "../BrandLogo/BrandLogo";
 import ButtonToggler from "./ItemsNavbar/ButtonToggler";
 import links from "./ItemsNavbar/Navegation";
-// import { navigationLinks as links } from "../NavigationLinks/NavigationLinks";
 
 function Navbar() {
   return (

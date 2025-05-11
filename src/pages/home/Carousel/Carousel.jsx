@@ -1,7 +1,7 @@
 import ControlCarousel from "./ControlCarousel";
 import slides from "./Slides";
 
-function Carrucel() {
+function Carousel() {
   return (
     <div
       id="carouselExampleDark"
@@ -33,4 +33,4 @@ function Carrucel() {
   );
 }
 
-export default Carrucel;
+export default Carousel;
