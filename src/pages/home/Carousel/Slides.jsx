@@ -1,6 +1,7 @@
 import smartwatchImg from "../../../../public/image/smartwatch.png";
 import relojesImg from "../../../../public/image/Relojes.png";
 import paredImg from "../../../../public/image/relojesdepared.png";
+// import paredImg from "../assets/image/relojesdepared.png";
 
 const slides = [
   {

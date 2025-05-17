@@ -25,4 +25,3 @@ function WhatsAppPopup({ contacts, onClose }) {
 }
 
 export default WhatsAppPopup;
-// <i className="bi bi-x-circle"></i>
