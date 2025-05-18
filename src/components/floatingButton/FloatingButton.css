@@ -1,66 +1,75 @@
-/* FloatingButton.css */
-.floating-btn {
+/* Botón flotante */
+.btn-flotante {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 28px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  line-height: 60px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Contenedor del botón y el menú */
+.whatsapp-menu {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #25d366;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  font-size: 30px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease;
   z-index: 1000;
 }
 
-.floating-btn:hover {
-  background-color: #0056b3;
-}
-
-
-.floating-btn i {
-  font-size: 30px;
-}
-
-/* Estilo para la ventana flotante */
-.whatsapp-popup {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-  justify-content: center;
-  align-items: center;
-}
-
-.whatsapp-popup-content {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 600px;
-  position: relative;
-}
-
-.close-popup {
+/* Menú desplegable */
+.whatsapp-options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background: red;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  padding: 5px 10px;
-  cursor: pointer;
+  bottom: 70px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  width: 200px;
 }
 
-h3 {
-  margin-bottom: 20px;
+/* Estilo de cada opción */
+.whatsapp-options li a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+
+.whatsapp-options li a:hover {
+  background-color: #f1f1f1;
+  color: #28a745;
+}
+
+/* Botón de cierre */
+.cerrar-menu {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  background: transparent;
+  border: none;
   font-size: 18px;
+  color: #888;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.cerrar-menu:hover {
+  color: #dc3545;
+  /* rojo Bootstrap */
 }
