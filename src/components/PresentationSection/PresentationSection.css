@@ -1,7 +1,18 @@
 /* Section presentation --/-- Sección de presentacion */
 .presentation {
   background-color: #d4af37;
-  min-height: 100px;
+  height: 100%;
+  width: 100%;
   text-align: center;
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+/* .presentation {
+  background-color: #d4af37;
+  min-height: 150px;
+  text-align: center;
+  padding: 1.5rem;
+} */

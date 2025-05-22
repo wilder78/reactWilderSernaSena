@@ -24,3 +24,12 @@ export const quartzWatchImages = [
   { src: "image/cuarzo/fotoTimexC.png", alt: "fotoTimexC" },
   { src: "image/cuarzo/fotoTissotC.png", alt: "fotoTissotC" },
 ];
+
+export const smartWatchImages = [
+  { src: "image/smartWatch/appleWatch.png", alt: "appleWatch" },
+  { src: "image/smartWatch/fitbitWatch.png", alt: "fitbitWatch" },
+  { src: "image/smartWatch/garminWatch.png", alt: "garminWatch" },
+  { src: "image/smartWatch/googleWatch.png", alt: "googleWatch" },
+  { src: "image/smartWatch/samsungWatch.png", alt: "samsungWatch" },
+  { src: "image/smartWatch/xiomiWatch.png", alt: "xiomiWatch" },
+];

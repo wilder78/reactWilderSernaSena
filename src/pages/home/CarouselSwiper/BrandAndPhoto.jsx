@@ -5,7 +5,6 @@ import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 
-
 function BrandAndPhoto({ images }) {
   return (
     <div className="content">
