@@ -10,7 +10,7 @@ function BrandLogo() {
       aria-label="Página principal WM. Watch Repair"
     >
       <img src={logo} width="40" alt="Logo WM Watch Repair" />
-      WM. Watch Repair
+      <h1 className="fs-5 mb-0">WM. Watch Repair</h1>
     </NavLink>
   );
 }
