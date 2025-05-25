@@ -12,4 +12,11 @@ export const navigationLinks = {
     { to: "/noticias", label: "Noticias" },
     { to: "/promociones", label: "Promociones" },
   ],
+
+  pageProducts: [
+    { to: "/productsMechanictWatch", label: "Productos reloj mecanico" },
+    { to: "/productsQuartsWatch", label: "Productos reloj cuarzo" },
+    { to: "/productsSmartWatch", label: "Productos smart watch" },
+    { to: "/productWallClock", label: "Productos reloj de pared" },
+  ],
 };

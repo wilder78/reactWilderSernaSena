@@ -10,6 +10,7 @@ import {
 } from "../../imageData/imageData";
 import { SubTitle } from "../../components/SubTitle/SubTitle";
 import { EffectCube } from "../../components/EffectCube/EffectCube";
+import Form from "../../components/Forms/Form";
 
 function Home() {
   return (
@@ -91,6 +92,10 @@ function Home() {
       <div className="b-example-divider" />
 
       <EffectCube />
+
+      <div className="b-example-divider" />
+
+      <Form />
 
       <div className="b-example-divider" />
 

@@ -3,6 +3,7 @@ import FloatingButton from "../../components/FloatingButton/FloatingButton";
 import ToolbarHeader from "./ToolbarHeader/ToolbarHeader";
 import SidebarFilter from "./SidebarFilter/SidebarFilter";
 import RecommendedProducts from "./RecommendedProducts/RecommendedProducts";
+import Form from "../../components/Forms/Form";
 
 export const Product = () => {
   return (
@@ -14,6 +15,9 @@ export const Product = () => {
           <RecommendedProducts />
         </div>
       </main>
+      <div className="b-example-divider" />
+      <Form />
+      <div className="b-example-divider" />
       <FloatingButton />
     </>
   );
