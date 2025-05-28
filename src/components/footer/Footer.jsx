@@ -12,7 +12,7 @@ const Footer = () => {
   ];
 
   const helpCenter = [
-    { to: "/servicio-al-cliente", label: "Servicio al cliente" },
+    { to: "/despacho-mercancia", label: "Servicio de bodega" },
     { to: "/about", label: "Nosotros" },
     { to: "/noticias", label: "Noticias" },
     { to: "/promociones", label: "Promociones" },

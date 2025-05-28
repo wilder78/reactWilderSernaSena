@@ -33,3 +33,16 @@ export const smartWatchImages = [
   { src: "image/smartWatch/samsungWatch.png", alt: "samsungWatch" },
   { src: "image/smartWatch/xiomiWatch.png", alt: "xiomiWatch" },
 ];
+
+export const companyStaff = [
+  { src: "image/companySection/almacenamiento.png", alt: "almacenamiento" },
+  { src: "image/companySection/asesorCentro.png", alt: "asesorCentro" },
+  { src: "image/companySection/asesoria.png", alt: "asesoria" },
+  { src: "image/companySection/asesorNorte.png", alt: "asesorNorte" },
+  { src: "image/companySection/asesorSur.png", alt: "asesorSur" },
+  { src: "image/companySection/atencionCl.png", alt: "atencionCl" },
+  { src: "image/companySection/bodeguero.png", alt: "bodeguero" },
+  { src: "image/companySection/despacho.png", alt: "despacho" },
+  { src: "image/companySection/secretariaP.png", alt: "secretariaP" },
+  { src: "image/companySection/vendedorNorte.png", alt: "vendedorNorte" },
+];
