@@ -8,10 +8,6 @@
     --text-light: #6c757d;
 }
 
-
-
-
-
 .btn-outline-success {
     color: var(--accent-color);
     border-color: var(--accent-color);
