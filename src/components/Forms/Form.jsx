@@ -99,15 +99,15 @@ const Form = () => {
               ></textarea>
             </div>
 
-            <div className="form-group full-width">
-              <div className="checkbox-container">
+            <div className="newsletter-group full-width">
+              <div className="newsletter-checkbox-wrapper">
                 <input
-                  className="form-check-input"
+                  className="newsletter-checkbox"
                   type="checkbox"
                   name="newsletter"
                   id="newsletter"
                 />
-                <label className="form-check-label" htmlFor="newsletter">
+                <label className="newsletter-label" htmlFor="newsletter">
                   Deseo recibir novedades y promociones
                 </label>
               </div>
