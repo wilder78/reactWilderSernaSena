@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ProductCard = ({
   title,
@@ -13,6 +13,8 @@ const ProductCard = ({
   soldOut = false,
   newProduct = false,
 }) => {
+  const [quantity, setQuantity] = useState(1);
+
   const renderStars = () => {
     const stars = [];
     const fullStars = Math.floor(rating);
@@ -29,6 +31,14 @@ const ProductCard = ({
     }
 
     return stars;
+  };
+
+  const handleIncrement = () => {
+    if (quantity < stock) setQuantity(quantity + 1);
+  };
+
+  const handleDecrement = () => {
+    if (quantity > 1) setQuantity(quantity - 1);
   };
 
   return (
@@ -58,31 +68,66 @@ const ProductCard = ({
             </div>
           )}
         </div>
+
         <div className="card-body">
           <div className="d-flex justify-content-between align-items-start mb-2">
             <h5 className="card-title mb-0">{title}</h5>
             <div className="text-warning small">{renderStars()}</div>
           </div>
           <p className="card-text text-muted small">{description}</p>
-          <div className="d-flex justify-content-between align-items-center">
+
+          <div className="d-flex justify-content-between align-items-center mb-2">
             <div>
               {oldPrice && (
                 <span className="text-decoration-line-through text-muted me-2">
                   ${oldPrice.toFixed(2)}
                 </span>
               )}
-              <span className={`fw-bold ${oldPrice ? "text-danger" : "text-primary"}`}>
+              <span
+                className={`fw-bold ${
+                  oldPrice ? "text-danger" : "text-primary"
+                }`}
+              >
                 ${price.toFixed(2)}
               </span>
             </div>
-            <button className="btn btn-sm btn-outline-primary" disabled={soldOut}>
+            <button
+              className="btn btn-sm btn-outline-primary"
+              disabled={soldOut}
+            >
               <i className="bi bi-cart-plus"></i>
             </button>
           </div>
+
+          {/* Selector de cantidad */}
+          {!soldOut && (
+            <div className="d-flex justify-content-center align-items-center gap-2 mt-2">
+              <button
+                className="btn btn-outline-secondary btn-sm"
+                onClick={handleDecrement}
+              >
+                <i className="bi bi-dash"></i>
+              </button>
+              <span>{quantity}</span>
+              <button
+                className="btn btn-outline-secondary btn-sm"
+                onClick={handleIncrement}
+              >
+                <i className="bi bi-plus"></i>
+              </button>
+            </div>
+          )}
         </div>
+
         <div className="card-footer bg-transparent border-top-0">
           <small className={stock > 0 ? "text-success" : "text-danger"}>
-            <i className={`bi ${stock > 0 ? "bi-check-circle-fill" : "bi-exclamation-circle-fill"} me-1`}></i>
+            <i
+              className={`bi ${
+                stock > 0
+                  ? "bi-check-circle-fill"
+                  : "bi-exclamation-circle-fill"
+              } me-1`}
+            ></i>
             {stock > 0 ? `En stock (${stock} unidades)` : "Sin stock"}
           </small>
         </div>

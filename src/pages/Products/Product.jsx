@@ -18,6 +18,7 @@ export const Product = () => {
       <div className="b-example-divider" />
       <Form />
       <div className="b-example-divider" />
+      <FloatingButton />
     </>
   );
 };

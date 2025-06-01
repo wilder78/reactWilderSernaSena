@@ -2,6 +2,7 @@ import React from "react";
 import "./Contacts.css";
 import ContactDetails from "./ContactsSections/ContactDetails";
 import Advisors from "./ContactsSections/Advisors";
+import FloatingButton from "../../components/FloatingButton/FloatingButton";
 
 const Contacts = () => {
   return (
@@ -18,6 +19,7 @@ const Contacts = () => {
 
       <Advisors />
       <ContactDetails />
+      <FloatingButton />
     </>
   );
 };

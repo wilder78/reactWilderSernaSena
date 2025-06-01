@@ -55,6 +55,7 @@ const StorageSection = () => {
       </section>
 
       <StorageImageSection />
+      <FloatingButton />
     </>
   );
 };
