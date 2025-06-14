@@ -2,7 +2,7 @@ import React from "react";
 import "./StorageSection.css";
 import StorageServiceCard from "./StorageComponents/StorageServiceCard";
 import StorageImageSection from "./StorageComponents/StorageImageSection";
-import FloatingButton from "../../components/FloatingButton/FloatingButton";
+import FloatingButton from "../../features/inventory/components/FloatingButton/FloatingButton";
 
 const services = [
   {
