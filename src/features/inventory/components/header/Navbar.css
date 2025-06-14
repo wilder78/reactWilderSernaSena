@@ -1,0 +1,17 @@
+/* Navegation bar Navbar. --//-- Barra de navegación navbar. */
+
+.navbar {
+  background-color: rgb(212, 175, 55);
+  min-height: 70px;
+  /* Altura mínima */
+  padding: 10px 20px;
+  /* Espaciado vertical y horizontal */
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+nav img {
+  margin: 2px;
+}

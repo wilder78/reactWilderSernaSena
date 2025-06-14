@@ -1,0 +1,239 @@
+/* === Contenedor principal === */
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* === Sección de información === */
+.contact-info-section {
+    flex: 1;
+    padding: 3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #2c3e50, #4a6491);
+}
+
+.info-content {
+    width: 100%;
+}
+
+.contact-title {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.contact-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #f8d64e;
+}
+
+.contact-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.contact-details {
+    margin-top: 2.5rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.detail-item i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color: #f8d64e;
+}
+
+/* === Sección del formulario === */
+.contact-form-section {
+    flex: 1.2;
+    padding: 1.5rem;
+    background-color: #fff;
+}
+
+.form-title {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.form-group {
+    position: relative;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.icon-input i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.1rem;
+    color: #7f8c8d;
+}
+
+.icon-input input,
+.icon-input select,
+.icon-input textarea {
+    padding-left: 40px !important;
+}
+
+/* === Campos de formulario === */
+.form-control,
+.form-select {
+    width: 100%;
+    height: 50px;
+    padding: 0 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #4a6491;
+    box-shadow: 0 0 0 0.25rem rgba(74, 100, 145, 0.25);
+}
+
+textarea.form-control {
+    height: auto;
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* === Checkbox genérico === */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.form-check-input {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #4a6491;
+    border-color: #4a6491;
+}
+
+.form-check-label {
+    cursor: pointer;
+    user-select: none;
+    color: #555;
+}
+
+/* === Checkbox circular personalizado === */
+.custom-checkbox,
+.newsletter-checkbox {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    margin-right: 8px;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+    transition: all 0.2s ease;
+}
+
+.custom-checkbox:checked,
+.newsletter-checkbox:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.custom-checkbox:checked::after,
+.newsletter-checkbox:checked::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+/* === Etiqueta del checkbox personalizado === */
+.newsletter-label {
+    cursor: pointer;
+    user-select: none;
+    color: #555;
+}
+
+.newsletter-group {
+    margin-top: 1rem;
+}
+
+.newsletter-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* === Botón de envío === */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #4a6491, #2c3e50);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.submit-button:hover {
+    background: linear-gradient(to right, #3a547e, #1c2e40);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* === Responsive === */
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: span 1;
+    }
+}

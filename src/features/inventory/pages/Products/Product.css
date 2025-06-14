@@ -1,0 +1,9 @@
+.custom-main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    background-color: #f9f9f9;
+}
