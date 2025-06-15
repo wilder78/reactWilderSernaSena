@@ -1,25 +1,20 @@
-import smartwatchImg from "../../../../public/image/smartwatch.png";
-import relojesImg from "../../../../public/image/Relojes.png";
-import paredImg from "../../../../public/image/relojesdepared.png";
-// import paredImg from "../assets/image/relojesdepared.png";
-
 const slides = [
   {
-    src: smartwatchImg,
+    src: "/image/carouselImage/smartwatch.png",
     alt: "Smartwatch",
     title: "Smartwatch",
     text: "Modelos modernos y funcionales para tu estilo de vida digital.",
     interval: 4000,
   },
   {
-    src: relojesImg,
+    src: "/image/carouselImage/Relojes.png",
     alt: "Relojes de pulso",
     title: "Relojes de pulso",
     text: "Diseños clásicos y elegantes que marcan la diferencia.",
     interval: 4000,
   },
   {
-    src: paredImg,
+    src: "/image/carouselImage/relojesdepared.png",
     alt: "Relojes de pared",
     title: "Relojes de pared",
     text: "Decoración y precisión en cada espacio del hogar.",

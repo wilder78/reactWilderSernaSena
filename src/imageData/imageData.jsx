@@ -46,3 +46,11 @@ export const companyStaff = [
   { src: "image/companySection/secretariaP.png", alt: "secretariaP" },
   { src: "image/companySection/vendedorNorte.png", alt: "vendedorNorte" },
 ];
+
+export const carrouselImages = [
+  { src: "/image/carouselImage/relojesdepared.png", alt: "relojesdepared" },
+  { src: "/image/carouselImage/smartwatch.png", alt: "smartwatch" },
+  { src: "/image/carouselImage/Relojes.png", alt: "Relojes" },
+];
+
+

@@ -1,7 +1,7 @@
 // src/pages/Pages.jsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "../features/inventory/components/Header/Navbar";
-import Footer from "../features/inventory/components/Footer/Footer";
+import Navbar from "../components/Header/Navbar";
+import Footer from "../components/Footer/Footer";
 import Home from "./Home/Home";
 import { Product } from "./Products/Product";
 import AboutUs from "./AboutUs/AboutUs";

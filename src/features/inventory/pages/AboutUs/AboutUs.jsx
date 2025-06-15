@@ -2,9 +2,9 @@ import React from "react";
 import "./AboutUs.css";
 import HeroSection from "./HeroSection/HeroSection";
 import AboutContent from "./AboutContent/AboutContent";
-import SectionBlock from "../../features/inventory/components/SectionBlock/SectionBlock";
-import VisionSection from "../../features/inventory/components/VisionSection/VisionSection";
-import FloatingButton from "../../features/inventory/components/FloatingButton/FloatingButton";
+import SectionBlock from "../../components/SectionBlock/SectionBlock";
+import VisionSection from "../../components/VisionSection/VisionSection";
+import FloatingButton from "../../components/FloatingButton/FloatingButton";
 
 const AboutUs = () => {
   return (

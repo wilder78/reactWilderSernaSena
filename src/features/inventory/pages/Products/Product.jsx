@@ -1,9 +1,9 @@
 import "./Product.css";
-import FloatingButton from "../../features/inventory/components/FloatingButton/FloatingButton";
+import FloatingButton from "../../components/FloatingButton/FloatingButton";
 import ToolbarHeader from "./ToolbarHeader/ToolbarHeader";
 import SidebarFilter from "./SidebarFilter/SidebarFilter";
 import RecommendedProducts from "./RecommendedProducts/RecommendedProducts";
-import Form from "../../features/inventory/components/Forms/Form";
+import Form from "../../components/Forms/Form";
 
 export const Product = () => {
   return (
