@@ -1,4 +1,4 @@
-import Pages from "./features/inventory/pages/Pages";
+// import Pages from "./features1/inventory/pages/Pages";
 
 function App() {
   return <Pages />;
