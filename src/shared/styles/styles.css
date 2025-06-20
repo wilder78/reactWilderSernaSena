@@ -1,3 +1,19 @@
+/* Navegation bar Navbar. --//-- Barra de navegación navbar. */
+
+.navbar {
+  background-color: rgb(212, 175, 55);
+  min-height: 70px;
+  padding: 10px 20px;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+nav img {
+  margin: 2px;
+}
+
 /* --- Estilos generales del footer --- */
 footer {
   min-height: 250px;

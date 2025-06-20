@@ -1,0 +1,17 @@
+.carousel-img-container {
+    height: 600px;
+    overflow: hidden;
+}
+
+.carousel-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 768px) {
+    .carousel-img-container {
+        height: 300px;
+    }
+}

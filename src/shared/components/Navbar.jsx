@@ -1,16 +1,14 @@
 // src/components/Navbar.jsx
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./Navbar.css";
+import { BrandLogo } from "./BrandLogo";
 
-// Datos de navegación
 const links = [
   { to: "/", label: "Inicio" },
   { to: "/services", label: "Servicios" },
   { to: "/products", label: "Productos" },
 ];
 
-// Componente para ítems del menú
 function NavItem({ to, label, className = "" }) {
   return (
     <li className="nav-item">
@@ -26,7 +24,6 @@ function NavItem({ to, label, className = "" }) {
   );
 }
 
-// Botón de menú hamburguesa
 function ButtonToggler() {
   return (
     <button
@@ -43,16 +40,6 @@ function ButtonToggler() {
   );
 }
 
-// Componente de logo de marca (puedes modificar el contenido)
-function BrandLogo() {
-  return (
-    <a className="navbar-brand" href="/">
-      <img src="/logo.png" alt="Logo" style={{ height: "40px" }} />
-    </a>
-  );
-}
-
-// Componente del carrito (simulado para este ejemplo)
 function Cart() {
   return (
     <NavLink to="/cart" className="nav-link">
@@ -61,7 +48,6 @@ function Cart() {
   );
 }
 
-// Navbar principal
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-md">

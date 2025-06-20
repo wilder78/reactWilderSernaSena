@@ -1,7 +1,8 @@
-// import Pages from "./features1/inventory/pages/Pages";
+import React from "react";
+import AppRoutes from "./Routes";
 
 function App() {
-  return <Pages />;
+  return <AppRoutes />;
 }
 
 export default App;

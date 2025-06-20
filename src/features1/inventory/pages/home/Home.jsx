@@ -1,16 +1,16 @@
 import "./Home.css";
 import FloatingButton from "../../components/FloatingButton/FloatingButton";
-import BrandAndPhoto from "./CarouselSwiper/BrandAndPhoto";
+import BrandAndPhoto from "../../../../shared/components/brandAndPhoto/BrandAndPhoto";
 import Carousel from "./Carousel/Carousel";
-import PresentationSection from "../../components/PresentationSection/PresentationSection";
+// import PresentationSection from "../../../../shared/components/PresentationSection";
 import {
   mechanicalWatchImages,
   quartzWatchImages,
   smartWatchImages,
-} from "../../../../imageData/imageData";
+} from "../../../../imageData/ImageData";
 import { SubTitle } from "../../components/SubTitle/SubTitle";
-import { EffectCube } from "../../components/EffectCube/EffectCube";
-import Form from "../../components/Forms/Form";
+import { EffectCube } from "../../../../features/home/EffectCube/EffectCube";
+import Form from "../../../../shared/components/Forms/Form";
 
 function Home() {
   return (
