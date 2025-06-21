@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 
 const ProductCard = ({
@@ -37,17 +36,20 @@ const ProductCard = ({
   };
 
   const handleIncrement = () => {
-    if (quantity < stock) setQuantity(quantity + 1);
+    if (quantity < stock && quantity < 12) {
+      setQuantity(quantity + 1);
+    }
   };
 
   const handleDecrement = () => {
-    if (quantity > 1) setQuantity(quantity - 1);
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
   };
 
   return (
     <div className="product-card">
       <div className="card h-100 shadow-sm position-relative">
-        {/* Etiquetas de estado */}
         {discount && (
           <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
             {discount}
@@ -60,7 +62,6 @@ const ProductCard = ({
           </span>
         )}
 
-        {/* Imagen */}
         <div className="position-relative">
           <img
             src={imageUrl || "https://via.placeholder.com/200"}
@@ -75,7 +76,6 @@ const ProductCard = ({
           )}
         </div>
 
-        {/* Información */}
         <div className="card-body product-card-body">
           <div className="d-flex justify-content-between align-items-start mb-2">
             <h5 className="card-title mb-0 product-card-title">{title}</h5>
@@ -85,7 +85,6 @@ const ProductCard = ({
             {description}
           </p>
 
-          {/* Precios y botón carrito */}
           <div className="d-flex justify-content-between align-items-center mb-2">
             <div>
               {oldPrice !== null && (
@@ -115,6 +114,7 @@ const ProductCard = ({
               <button
                 className="btn btn-outline-secondary btn-sm"
                 onClick={handleDecrement}
+                disabled={quantity <= 1}
               >
                 <i className="bi bi-dash" />
               </button>
@@ -122,6 +122,7 @@ const ProductCard = ({
               <button
                 className="btn btn-outline-secondary btn-sm"
                 onClick={handleIncrement}
+                disabled={quantity >= stock || quantity >= 12}
               >
                 <i className="bi bi-plus" />
               </button>
@@ -129,7 +130,6 @@ const ProductCard = ({
           )}
         </div>
 
-        {/* Stock */}
         <div className="card-footer bg-transparent border-top-0">
           <small className={stock > 0 ? "text-success" : "text-danger"}>
             <i
