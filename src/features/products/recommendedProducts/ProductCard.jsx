@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { useCart } from "../../../context/CartContext"; // Asegúrate de que esta ruta sea correcta
 
 const ProductCard = ({
+  id,
   title = "Producto sin título",
   description = "Sin descripción",
   imageUrl = "",
@@ -14,6 +16,7 @@ const ProductCard = ({
   newProduct = false,
 }) => {
   const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useCart();
 
   const renderStars = () => {
     const stars = [];
@@ -45,6 +48,10 @@ const ProductCard = ({
     if (quantity > 1) {
       setQuantity(quantity - 1);
     }
+  };
+
+  const handleAddToCart = () => {
+    addToCart({ id, title, price, imageUrl, stock, description }, quantity);
   };
 
   return (
@@ -103,12 +110,12 @@ const ProductCard = ({
             <button
               className="btn btn-sm btn-outline-primary"
               disabled={soldOut}
+              onClick={handleAddToCart}
             >
               <i className="bi bi-cart-plus" />
             </button>
           </div>
 
-          {/* Selector de cantidad */}
           {!soldOut && (
             <div className="d-flex justify-content-center align-items-center gap-2 mt-2">
               <button

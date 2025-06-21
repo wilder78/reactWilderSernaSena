@@ -15,6 +15,19 @@ nav img {
   margin: 2px;
 }
 
+.cart-sidebar {
+  transform: translateX(100%);
+}
+
+.cart-sidebar.translate-x-0 {
+  transform: translateX(0);
+}
+
+.cart-sidebar.translate-x-full {
+  transform: translateX(100%);
+}
+
+
 /* ====================
    Footer
 ==================== */
