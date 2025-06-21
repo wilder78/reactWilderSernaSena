@@ -1,4 +1,5 @@
 import React from "react";
+import { almacenamiento } from "../../imageData/ImageData";
 
 const features = [
   {
@@ -25,7 +26,7 @@ const StorageImageSection = () => (
       <div className="row align-items-center flex-column flex-lg-row">
         <div className="col-lg-5 mb-4 mb-lg-0 text-center">
           <img
-            src="image/companySection/almacenamiento.png"
+            src={almacenamiento}
             alt="Almacén de relojes"
             className="img-fluid shadow-lg rounded-img responsive-img mx-auto d-block"
           />

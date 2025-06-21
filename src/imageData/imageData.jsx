@@ -104,6 +104,9 @@ import vendedorCentro from "../assets/image/companySection/vendedoraCentro.png";
 import vendedorNorte from "../assets/image/companySection/vendedorNorte.png";
 import vendedorSur from "../assets/image/companySection/vendedorSur.png";
 
+// ✅ Exportar individualmente si se necesita usar fuera del array
+export { almacenamiento }; // <-- Esta línea permite usarla con `import { almacenamiento } from "../../imageData/ImageData";`
+
 // Exportación individual de imágenes (para otros componentes como Advisors.jsx)
 export { asesorCentro, asesorNorte, asesorSur };
 
