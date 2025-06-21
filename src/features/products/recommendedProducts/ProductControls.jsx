@@ -1,5 +1,4 @@
 import React from "react";
-// import "./ProductControls.css";
 
 const ProductControls = ({ quantity, onIncrement, onDecrement, disabled }) => {
   return (

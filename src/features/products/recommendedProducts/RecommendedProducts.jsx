@@ -1,29 +1,22 @@
 import React, { useState } from "react";
 
 import ProductGrid from "./ProductGrid";
-import ProductControls from "./ProductControls";
-import Pagination from "./ProductCard";
+import Pagination from "../pagination/Pagination";
 
 const RecommendedProducts = () => {
-  // Ejemplo de paginación y control de cantidad
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = 3; // Ajusta según la cantidad real de páginas
 
-  // Puedes pasar props reales a ProductControls si lo necesitas
   return (
     <section className="col-lg-9">
-      <ProductControls
-        quantity={1}
-        onIncrement={() => {}}
-        onDecrement={() => {}}
-        disabled={false}
-      />
       <ProductGrid />
-      <Pagination
-        currentPage={currentPage}
-        totalPages={totalPages}
-        onPageChange={setCurrentPage}
-      />
+      <div style={{ marginTop: "2rem" }}>
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={setCurrentPage}
+        />
+      </div>
     </section>
   );
 };
