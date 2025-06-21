@@ -1,5 +1,6 @@
-/* Navegation bar Navbar. --//-- Barra de navegación navbar. */
-
+/* ====================
+   Navbar
+==================== */
 .navbar {
   background-color: rgb(212, 175, 55);
   min-height: 70px;
@@ -14,7 +15,9 @@ nav img {
   margin: 2px;
 }
 
-/* --- Estilos generales del footer --- */
+/* ====================
+   Footer
+==================== */
 footer {
   min-height: 250px;
   background-color: #1b1b32;
@@ -22,26 +25,16 @@ footer {
   padding-top: 2rem;
 }
 
-/* Logo de la marca */
-.brand-logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-/* Imagen del logo */
 footer img {
   margin: 2px;
   max-width: 100%;
   height: auto;
 }
 
-/* Texto justificable */
 footer p {
   text-align: justify;
 }
 
-/* Sección de redes sociales */
 .iconos-redes {
   display: flex;
   flex-wrap: wrap;
@@ -51,7 +44,6 @@ footer p {
   padding: 1rem 0;
 }
 
-/* Estilo de cada ícono (enlace) */
 .iconos-redes a {
   width: 50px;
   height: 50px;
@@ -64,14 +56,12 @@ footer p {
   text-decoration: none;
 }
 
-/* Ícono interior */
 .iconos-redes i {
   color: white;
   font-size: 1.5rem;
   transition: all 0.3s ease-in-out;
 }
 
-/* Hover */
 .iconos-redes a:hover {
   background-color: white;
   border-color: rgb(13, 110, 253);
@@ -81,7 +71,6 @@ footer p {
   color: black;
 }
 
-/* Sección de copyright */
 .copyright {
   font-size: 0.9rem;
   color: #aeaeae;
@@ -89,4 +78,259 @@ footer p {
   text-align: center;
   border-top: 1px solid #444;
   margin-top: 1rem;
+}
+
+/* ====================
+   Variables de color
+==================== */
+:root {
+  --primary-color: #0a0a12;
+  --secondary-color: #c9b176;
+  --accent-color: #d4af37;
+  --light-color: #f8f9fa;
+  --dark-color: #0f1a30;
+  --text-color: #333333;
+  --text-light: #6c757d;
+}
+
+/* ====================
+   Botón personalizado
+==================== */
+.btn-outline-success {
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  font-weight: 500;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+/* ====================
+   Hero Section
+==================== */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover fixed;
+  color: white;
+  padding: 180px 0 150px;
+  text-align: center;
+  position: relative;
+}
+
+/* ====================
+   Sección de almacenamiento
+==================== */
+.storage-section {
+  padding: 100px 0;
+  background-color: #fff;
+  position: relative;
+}
+
+.storage-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  opacity: 0.03;
+  z-index: 0;
+}
+
+.storage-card {
+  background: white;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  text-align: center;
+  height: 100%;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.storage-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.storage-icon {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+  color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  font-size: 2.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ====================
+   Títulos y texto
+==================== */
+.section-title {
+  color: var(--primary-color);
+  margin-bottom: 50px;
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-color), transparent);
+  bottom: -15px;
+  left: 0;
+  border-radius: 3px;
+}
+
+.gold-text {
+  color: var(--accent-color);
+}
+
+.text-light-gray {
+  color: var(--text-light);
+}
+
+/* ====================
+   Animaciones
+==================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+/* ====================
+   Estilos varios
+==================== */
+.watch-hover-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.watch-hover-effect::after {
+  content: '🕒';
+  position: absolute;
+  font-size: 1.2rem;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.watch-hover-effect:hover::after {
+  right: 15px;
+  opacity: 1;
+}
+
+.rounded-img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.responsive-img {
+  width: 400px;
+  height: 400px;
+}
+
+/* ====================
+   Responsive
+==================== */
+@media (max-width: 992px) {
+  .storage-card {
+    padding: 30px 20px;
+  }
+
+  .storage-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+
+  .storage-section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .responsive-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .storage-section {
+    padding: 40px 0;
+  }
+
+  .storage-card {
+    padding: 20px;
+  }
+
+  .storage-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .responsive-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .text-light-gray {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-img {
+    width: 160px;
+    height: 160px;
+  }
 }

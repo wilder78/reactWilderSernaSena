@@ -89,4 +89,36 @@ export const paredImages = [
   { src: relojParedMiller, alt: "Reloj Pared Miller" },
   { src: relojParedSeiko, alt: "Reloj Pared Seiko" },
 ];
-  
+
+// Importación de imágenes de la sección de empresa
+import almacenamiento from "../assets/image/companySection/almacenamiento.png";
+import asesorCentro from "../assets/image/companySection/asesorCentro.png";
+import asesoria from "../assets/image/companySection/asesoria.png";
+import asesorNorte from "../assets/image/companySection/asesorNorte.png";
+import asesorSur from "../assets/image/companySection/asesorSur.png";
+import atencionCl from "../assets/image/companySection/atencionCl.png";
+import bodeguero from "../assets/image/companySection/bodeguero.png";
+import despacho from "../assets/image/companySection/Despacho.png";
+import secretariaP from "../assets/image/companySection/secretariaP.png";
+import vendedorCentro from "../assets/image/companySection/vendedoraCentro.png";
+import vendedorNorte from "../assets/image/companySection/vendedorNorte.png";
+import vendedorSur from "../assets/image/companySection/vendedorSur.png";
+
+// Exportación individual de imágenes (para otros componentes como Advisors.jsx)
+export { asesorCentro, asesorNorte, asesorSur };
+
+// Exportación de todas las imágenes como lista
+export const companyStaff = [
+  { src: almacenamiento, alt: "Almacenamiento" },
+  { src: asesorCentro, alt: "AsesorCentro" },
+  { src: asesoria, alt: "Asesoría" },
+  { src: asesorNorte, alt: "AsesorNorte" },
+  { src: asesorSur, alt: "AsesorSur" },
+  { src: atencionCl, alt: "AtenciónAlCliente" },
+  { src: bodeguero, alt: "Bodeguero" },
+  { src: despacho, alt: "Despacho" },
+  { src: secretariaP, alt: "Secretaria" },
+  { src: vendedorCentro, alt: "VendedorCentro" },
+  { src: vendedorNorte, alt: "VendedorNorte" },
+  { src: vendedorSur, alt: "VendedorSur" },
+];

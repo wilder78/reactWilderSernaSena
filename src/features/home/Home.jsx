@@ -9,7 +9,7 @@ import {
   cuarzoImages,
   smartWatchImages,
 } from "../../imageData/ImageData";
-import Form from "../../shared/components/Forms/Form";
+import Form from "../../shared/components/forms/Form";
 import FloatingButton from "../../shared/components/floatingButton/FloatingButton";
 
 function Home() {
@@ -96,7 +96,6 @@ function Home() {
       <div className="b-example-divider" />
 
       <FloatingButton />
-      <div className="b-example-divider" />
     </>
   );
 }
