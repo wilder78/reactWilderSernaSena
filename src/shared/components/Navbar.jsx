@@ -43,7 +43,7 @@ function ButtonToggler() {
 }
 
 function CartSidebar({ isOpen, onClose }) {
-  const { cart } = useCart();
+  const { cart, cartTotal, removeFromCart } = useCart(); // ← Agregado removeFromCart
 
   return (
     <div
@@ -64,13 +64,13 @@ function CartSidebar({ isOpen, onClose }) {
       {cart.length === 0 ? (
         <p className="text-muted">El carrito está vacío.</p>
       ) : (
-        <ul className="list-group list-group-flush">
-          {cart.map((item) => (
-            <li
-              key={item.id}
-              className="list-group-item d-flex justify-content-between align-items-start"
-            >
-              <div className="me-2">
+        <>
+          <ul className="list-group list-group-flush">
+            {cart.map((item) => (
+              <li
+                key={item.id}
+                className="list-group-item d-flex align-items-start gap-2"
+              >
                 <img
                   src={item.imageUrl}
                   alt={item.title}
@@ -79,18 +79,40 @@ function CartSidebar({ isOpen, onClose }) {
                     height: "40px",
                     objectFit: "contain",
                   }}
+                  className="me-2"
                 />
-              </div>
-              <div className="flex-grow-1">
-                <div>{item.title}</div>
-                <small>
-                  {item.quantity} x ${item.price.toFixed(2)}
-                </small>
-              </div>
-              <strong>${(item.price * item.quantity).toFixed(2)}</strong>
-            </li>
-          ))}
-        </ul>
+
+                <div className="flex-grow-1">
+                  <div className="d-flex justify-content-between">
+                    <div className="fw-semibold">{item.title}</div>
+                  </div>
+                  <button
+                    className="btn btn-sm btn-outline-danger py-0 px-2"
+                    onClick={() => removeFromCart(item.id, item.quantity)}
+                    title="Eliminar producto"
+                  >
+                    🗑️
+                  </button>
+                  <small className="text-muted">
+                    {item.quantity} x ${item.price.toFixed(2)}
+                  </small>
+                </div>
+
+                <strong className="text-nowrap">
+                  ${(item.price * item.quantity).toFixed(2)}
+                </strong>
+              </li>
+            ))}
+          </ul>
+
+          {/* TOTAL AL FINAL */}
+          <div className="mt-4 border-top pt-3 text-end">
+            <h5 className="fw-bold">
+              Total a pagar:{" "}
+              <span className="text-success">${cartTotal.toFixed(2)}</span>
+            </h5>
+          </div>
+        </>
       )}
     </div>
   );

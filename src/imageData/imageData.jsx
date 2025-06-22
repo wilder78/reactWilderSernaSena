@@ -104,8 +104,8 @@ import vendedorCentro from "../assets/image/companySection/vendedoraCentro.png";
 import vendedorNorte from "../assets/image/companySection/vendedorNorte.png";
 import vendedorSur from "../assets/image/companySection/vendedorSur.png";
 
-// ✅ Exportar individualmente si se necesita usar fuera del array
-export { almacenamiento }; // <-- Esta línea permite usarla con `import { almacenamiento } from "../../imageData/ImageData";`
+// Exportar individualmente si se necesita usar fuera del array
+export { almacenamiento };
 
 // Exportación individual de imágenes (para otros componentes como Advisors.jsx)
 export { asesorCentro, asesorNorte, asesorSur };
@@ -124,4 +124,16 @@ export const companyStaff = [
   { src: vendedorCentro, alt: "VendedorCentro" },
   { src: vendedorNorte, alt: "VendedorNorte" },
   { src: vendedorSur, alt: "VendedorSur" },
+];
+
+// Importación de imágenes de reparación y asesoría
+import reparacionDeReloj from "../assets/image/repairAndAdvice/reparacionDeReloj.png";
+import mantenimientoRelojes from "../assets/image/repairAndAdvice/mantenimientoRelojes.png";
+import asesoresDeRelojes from "../assets/image/repairAndAdvice/asesoresDeRelojes.png";
+
+// Exportación de imágenes de reparación y asesoría
+export const repairAndAdvice = [
+  { src: reparacionDeReloj, alt: "Reparación de Reloj" },
+  { src: mantenimientoRelojes, alt: "Mantenimiento de Relojes" },
+  { src: asesoresDeRelojes, alt: "Asesores de Relojes" },
 ];

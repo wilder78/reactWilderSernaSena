@@ -7,6 +7,7 @@ import AboutUs from "./features/aboutUs/AboutUs";
 import StorageSection from "./features/storage/StorageSection";
 import Contacts from "./features/contact/Contacts";
 import { Product } from "./features/products/Product";
+import Services from "./features/services/Services";
 
 function AppRoutes() {
   return (
@@ -18,6 +19,7 @@ function AppRoutes() {
         <Route path="/despacho-mercancia" element={<StorageSection />} />
         <Route path="/contact" element={<Contacts />} />
         <Route path="/products" element={<Product />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
       <Footer />
     </>

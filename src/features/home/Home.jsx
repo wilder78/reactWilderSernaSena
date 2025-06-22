@@ -8,7 +8,7 @@ import {
   mechanicImages,
   cuarzoImages,
   smartWatchImages,
-} from "../../imageData/ImageData";
+} from "../../imageData/imageData";
 import Form from "../../shared/components/Form";
 import FloatingButton from "../../shared/components/floatingButton/FloatingButton";
 
