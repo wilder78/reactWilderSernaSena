@@ -1,5 +1,4 @@
 import React from "react";
-import "./contacts.css";
 import ContactDetails from "./ContactDetails";
 import Advisors from "./Advisors";
 import FloatingButton from "../../shared/components/floatingButton/FloatingButton";

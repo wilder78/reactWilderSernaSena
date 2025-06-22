@@ -1,5 +1,4 @@
 import React from "react";
-import "./aboutUs.css";
 import HeroSection from "./HeroSection";
 import AboutContent from "./AboutContent";
 import SectionBlock from "./SectionBlock";

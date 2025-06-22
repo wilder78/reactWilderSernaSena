@@ -3,13 +3,13 @@ import Carousel from "./carousel/Carousel";
 import { SubTitle } from "../../shared/components/SubTitle";
 import PresentationSection from "../../shared/components/PresentationSection";
 import { EffectCube } from "./EffectCube/EffectCube";
-import BrandAndPhoto from "../../shared/components/brandAndPhoto/BrandAndPhoto";
+import BrandAndPhoto from "../../shared/components/BrandAndPhoto";
 import {
   mechanicImages,
   cuarzoImages,
   smartWatchImages,
 } from "../../imageData/ImageData";
-import Form from "../../shared/components/forms/Form";
+import Form from "../../shared/components/Form";
 import FloatingButton from "../../shared/components/floatingButton/FloatingButton";
 
 function Home() {

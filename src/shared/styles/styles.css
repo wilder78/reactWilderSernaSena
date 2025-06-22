@@ -1,6 +1,22 @@
-/* ====================
-   Navbar
-==================== */
+/* =============================================================
+   VARIABLES DE COLOR (Paleta Global)
+   Definición de colores base como variables CSS para reutilización
+============================================================= */
+:root {
+  --primary-color: #0a0a12;       /* Color primario de fondo o énfasis */
+  --secondary-color: #c9b176;     /* Color secundario de contraste suave */
+  --accent-color: #d4af37;        /* Color dorado/acento */
+  --light-color: #f8f9fa;         /* Color de fondo claro */
+  --dark-color: #0f1a30;          /* Color de fondo oscuro */
+  --text-color: #333333;          /* Color principal del texto */
+  --text-light: #6c757d;          /* Color para texto secundario o aclarado */
+}
+
+
+/* =============================================================
+   NAVBAR
+   Estilo de barra de navegación superior y carrito lateral
+============================================================= */
 .navbar {
   background-color: rgb(212, 175, 55);
   min-height: 70px;
@@ -27,10 +43,10 @@ nav img {
   transform: translateX(100%);
 }
 
-
-/* ====================
-   Footer
-==================== */
+/* =============================================================
+   FOOTER
+   Estilos para el pie de página, íconos de redes y copyright
+============================================================= */
 footer {
   min-height: 250px;
   background-color: #1b1b32;
@@ -93,22 +109,10 @@ footer p {
   margin-top: 1rem;
 }
 
-/* ====================
-   Variables de color
-==================== */
-:root {
-  --primary-color: #0a0a12;
-  --secondary-color: #c9b176;
-  --accent-color: #d4af37;
-  --light-color: #f8f9fa;
-  --dark-color: #0f1a30;
-  --text-color: #333333;
-  --text-light: #6c757d;
-}
-
-/* ====================
-   Botón personalizado
-==================== */
+/* =============================================================
+   BOTÓN PERSONALIZADO
+   Estilo para botón tipo outline con color dorado
+============================================================= */
 .btn-outline-success {
   color: var(--accent-color);
   border: 2px solid var(--accent-color);
@@ -124,9 +128,10 @@ footer p {
   box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
 }
 
-/* ====================
-   Hero Section
-==================== */
+/* =============================================================
+   HERO SECTION
+   Imagen de fondo fija con superposición oscura y texto
+============================================================= */
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
     url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover fixed;
@@ -136,9 +141,10 @@ footer p {
   position: relative;
 }
 
-/* ====================
-   Sección de almacenamiento
-==================== */
+/* =============================================================
+   SECCIÓN DE ALMACENAMIENTO
+   Tarjetas con íconos y efectos de sombra
+============================================================= */
 .storage-section {
   padding: 100px 0;
   background-color: #fff;
@@ -189,9 +195,10 @@ footer p {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* ====================
-   Títulos y texto
-==================== */
+/* =============================================================
+   TÍTULOS Y TEXTOS
+   Estilos comunes para encabezados y texto ligero
+============================================================= */
 .section-title {
   color: var(--primary-color);
   margin-bottom: 50px;
@@ -219,9 +226,10 @@ footer p {
   color: var(--text-light);
 }
 
-/* ====================
-   Animaciones
-==================== */
+/* =============================================================
+   ANIMACIONES
+   Keyframes y clases para animación de entrada
+============================================================= */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -250,9 +258,10 @@ footer p {
   animation-delay: 0.6s;
 }
 
-/* ====================
-   Estilos varios
-==================== */
+/* =============================================================
+   ESTILOS VARIOS
+   Efectos visuales adicionales
+============================================================= */
 .watch-hover-effect {
   position: relative;
   overflow: hidden;
@@ -284,9 +293,1378 @@ footer p {
   height: 400px;
 }
 
-/* ====================
-   Responsive
-==================== */
+/* =============================================================
+   RESPONSIVE DESIGN
+   Ajustes para pantallas pequeñas
+============================================================= */
+@media (max-width: 992px) {
+  .storage-card {
+    padding: 30px 20px;
+  }
+
+  .storage-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+
+  .storage-section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .responsive-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .storage-section {
+    padding: 40px 0;
+  }
+
+  .storage-card {
+    padding: 20px;
+  }
+
+  .storage-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 1.8rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .responsive-img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .text-light-gray {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* ================================
+   CONTENEDOR PRINCIPAL DEL CONTACTO
+================================= */
+.contact-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ================================
+   SECCIÓN DE INFORMACIÓN
+================================= */
+.contact-info-section {
+  flex: 1;
+  padding: 3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #2c3e50, #4a6491);
+}
+
+.info-content {
+  width: 100%;
+}
+
+.contact-title {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+
+.contact-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #f8d64e;
+}
+
+.contact-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.contact-details {
+  margin-top: 2.5rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.detail-item i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  color: #f8d64e;
+}
+
+
+/* ================================
+   SECCIÓN DEL FORMULARIO
+================================= */
+.contact-form-section {
+  flex: 1.2;
+  padding: 1.5rem;
+  background-color: #fff;
+}
+
+.form-title {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+
+/* ================================
+   INPUTS CON ÍCONOS
+================================= */
+.icon-input i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  color: #7f8c8d;
+}
+
+.icon-input input,
+.icon-input select,
+.icon-input textarea {
+  padding-left: 40px !important;
+}
+
+
+/* ================================
+   CAMPOS DEL FORMULARIO
+================================= */
+.form-control,
+.form-select {
+  width: 100%;
+  height: 50px;
+  padding: 0 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #4a6491;
+  box-shadow: 0 0 0 0.25rem rgba(74, 100, 145, 0.25);
+}
+
+textarea.form-control {
+  height: auto;
+  resize: vertical;
+  min-height: 120px;
+}
+
+
+/* ================================
+   CHECKBOX CLÁSICO
+================================= */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.form-check-input {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: #4a6491;
+  border-color: #4a6491;
+}
+
+.form-check-label {
+  cursor: pointer;
+  user-select: none;
+  color: #555;
+}
+
+
+/* ================================
+   CHECKBOX PERSONALIZADO CIRCULAR
+================================= */
+.custom-checkbox,
+.newsletter-checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  margin-right: 8px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+.custom-checkbox:checked,
+.newsletter-checkbox:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.custom-checkbox:checked::after,
+.newsletter-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+
+/* ================================
+   GRUPO DE SUSCRIPCIÓN
+================================= */
+.newsletter-label {
+  cursor: pointer;
+  user-select: none;
+  color: #555;
+}
+
+.newsletter-group {
+  margin-top: 1rem;
+}
+
+.newsletter-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+
+/* ================================
+   BOTÓN DE ENVÍO
+================================= */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #4a6491, #2c3e50);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, #3a547e, #1c2e40);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================= */
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+}
+
+/* ================================
+   BOTONES FLOTANTES FIJOS
+================================= */
+.floating-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* ================================
+   ESTILOS DE BOTONES FLOTANTES
+================================= */
+.whatsapp-btn,
+.register-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+/* === Botón de WhatsApp === */
+.whatsapp-btn {
+  background-color: #25D366;
+}
+
+.whatsapp-btn:hover {
+  background-color: #128C7E;
+  transform: scale(1.1);
+}
+
+/* === Botón de registro === */
+.register-btn {
+  background-color: #0d6efd;
+}
+
+.register-btn:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.1);
+}
+
+/* ================================
+   MENÚ DESPLEGABLE DE WHATSAPP
+================================= */
+.whatsapp-dropdown {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 200px;
+  transform-origin: bottom right;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.dropdown-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dropdown-content a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f5f5f5;
+}
+
+/* Botón para cerrar el menú */
+.close-dropdown {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #666;
+}
+
+
+/* ================================
+   MODAL DE REGISTRO
+================================= */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+/* Botón para cerrar el modal */
+.close-modal {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+/* ================================
+   CAMPOS DEL FORMULARIO
+================================= */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Botón de enviar formulario */
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+/* ================================
+   ANIMACIONES
+================================= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* ================================
+   RESPONSIVE
+================================= */
+@media (max-width: 768px) {
+  .floating-buttons {
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  .whatsapp-btn,
+  .register-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+
+  .whatsapp-dropdown {
+    width: 180px;
+  }
+}
+
+/* ================================
+   ESTILOS BASE PARA SWIPER
+================================= */
+.swiper {
+  width: 100%;
+  padding: 30px 0;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+/* Contenedor de cada slide */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+
+/* ================================
+   TARJETA DE PRODUCTO DENTRO DEL SLIDE
+================================= */
+.card {
+  width: 100%;
+  max-width: 250px;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+  padding: 0;
+  margin: 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  /* Efecto zoom al pasar el cursor */
+}
+
+/* Imagen dentro de la tarjeta */
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Títulos y descripciones ocultos por defecto */
+.card h4,
+.card p {
+  display: none;
+}
+
+
+/* ================================
+   CONTENEDOR GENERAL
+================================= */
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================= */
+
+/* Tablet grande / Desktop pequeño */
+@media (max-width: 1200px) {
+  .swiper {
+    padding: 15px 0;
+  }
+
+  .swiper-slide {
+    flex: 0 0 25%;
+  }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .swiper {
+    padding: 15px 0;
+  }
+
+  .swiper-slide {
+    flex: 0 0 33.33%;
+  }
+}
+
+/* Móviles */
+@media (max-width: 500px) {
+  .swiper {
+    padding: 10px 0;
+  }
+}
+
+/* ================================
+   SECTION: PRESENTATION
+   Sección de presentación visual
+================================= */
+.presentation {
+  background-color: #d4af37;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ================================
+   VARIABLES GLOBALES DE COLOR
+   Definidas en el selector :root
+================================= */
+:root {
+  --primary-color: #1a1a2e;
+  --secondary-color: #d4af37;
+  --light-color: #f8f9fa;
+
+  --dark-color: #16213e;
+
+}
+
+/* ================================
+   BOTÓN PERSONALIZADO
+   Botón con estilo outline dorado
+================================= */
+.btn-outline-success {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-outline-success:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* ================================
+   SECCIÓN HERO (Encabezado principal)
+================================= */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 120px 0;
+  text-align: center;
+}
+
+/* ================================
+   SECCIÓN ABOUT (Acerca de)
+================================= */
+.about-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ================================
+   TÍTULOS DE SECCIÓN
+================================= */
+.section-title {
+  color: var(--primary-color);
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background: var(--secondary-color);
+  bottom: -10px;
+  left: 25%;
+}
+
+/* Texto con color dorado */
+.gold-text {
+  color: var(--secondary-color);
+}
+
+/* ================================
+   SECCIÓN MISIÓN
+================================= */
+.mission-section {
+  background-color: #fff;
+  padding: 80px 0;
+  border-top: 1px solid #eaeaea;
+}
+
+/* Estilo para texto principal de la misión */
+.mission-section .lead {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+
+/* ======================================
+   BOTÓN OUTLINE PERSONALIZADO
+======================================= */
+.btn-outline-success {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  font-weight: 500;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+/* ======================================
+   EFECTO HOVER EN IMÁGENES DE RELOJES
+======================================= */
+.watch-hover-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.watch-hover-effect::after {
+  content: '🕒';
+  position: absolute;
+  font-size: 1.2rem;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.watch-hover-effect:hover::after {
+  right: 15px;
+  opacity: 1;
+}
+
+/* ======================================
+   CLASES DE TEXTO PERSONALIZADAS
+======================================= */
+.gold-text {
+  color: var(--accent-color);
+}
+
+.text-light-gray {
+  color: var(--text-light);
+}
+
+/* ======================================
+   SECCIÓN HERO
+======================================= */
+.hero-section {
+  background: linear-gradient(rgba(10, 10, 18, 0.7), rgba(10, 10, 18, 0.7)),
+    url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80') no-repeat center center;
+  background-size: cover;
+  padding: 120px 0 80px;
+  color: white;
+  position: relative;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .lead {
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  opacity: 0.9;
+}
+
+/* ======================================
+   TÍTULO DE SECCIÓN
+======================================= */
+.section-title {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--accent-color);
+}
+
+/* ======================================
+   TARJETAS DE ASESORES
+======================================= */
+.advisor-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  border: none;
+}
+
+.advisor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.advisor-img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.advisor-info {
+  padding: 25px;
+}
+
+.advisor-name {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.advisor-region {
+  display: inline-block;
+  background: var(--accent-color);
+  color: var(--primary-color);
+  padding: 3px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.advisor-description {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+/* ======================================
+   BOTÓN CONTACTAR ASESOR
+======================================= */
+.btn-contact {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-contact:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.btn-contact i {
+  margin-right: 8px;
+}
+
+/* ======================================
+   SECCIÓN DE CONTACTO
+======================================= */
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+}
+
+.contact-info {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.contact-info h3 {
+  margin-bottom: 25px;
+  color: var(--primary-color);
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.contact-icon {
+  background: var(--accent-color);
+  color: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.contact-text h4 {
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.contact-text p {
+  margin: 0;
+  color: var(--text-light);
+}
+
+/* ======================================
+   CONTENEDOR DE MAPA
+======================================= */
+.map-container {
+  height: 100%;
+  min-height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ======================================
+   ELEMENTOS DECORATIVOS (RELOJES FLOTANTES)
+======================================= */
+.floating-watch {
+  position: absolute;
+  width: 150px;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.floating-watch-1 {
+  top: 20%;
+  left: 5%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-watch-2 {
+  bottom: 15%;
+  right: 5%;
+  animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ======================================
+   RESPONSIVE (Pantallas pequeñas)
+======================================= */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section .lead {
+    font-size: 1.2rem;
+  }
+
+  .advisor-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* ============================================
+   CARRUSEL DE IMÁGENES PRINCIPAL
+============================================ */
+.carousel-img-container {
+  height: 600px;
+  overflow: hidden;
+
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ============================================
+   RESPONSIVE: Ajustes para pantallas pequeñas
+============================================ */
+@media (max-width: 768px) {
+  .carousel-img-container {
+    height: 300px;
+  }
+}
+
+/* ================================================
+   CONTENEDOR PRINCIPAL DE LA SECCIÓN CON SWIPER
+=================================================== */
+.contenedor-effect {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================================================
+   RESPONSIVE: Diseño horizontal en pantallas medianas+
+=================================================== */
+@media (min-width: 768px) {
+  .contenedor-effect {
+    flex-direction: row;
+    /* Pasa de columna a fila */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .texto {
+    flex: 1;
+    text-align: center;
+  }
+
+  .swiper-wrapper-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* ================================================
+   ESTILOS GENERALES DE TEXTO
+=================================================== */
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.6;
+  max-width: 500px;
+  margin: 0 auto;
+
+}
+
+/* ================================================
+   SWIPER - CARRUSEL DE IMÁGENES
+=================================================== */
+.mySwiper {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  /* Personalización del Swiper */
+  --swiper-pagination-color: #3b82f6;
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+
+.mySwiper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Slide del Swiper */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+/* ================================================
+   EFECTO HOVER EN IMÁGENES DEL SLIDE
+=================================================== */
+.swiper-slide img {
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide:hover img {
+  transform: scale(1.02);
+}
+
+/* ================================================
+   SECCIÓN PRINCIPAL PERSONALIZADA (custom-main)
+   Centra el contenido vertical y horizontalmente
+   y ocupa al menos toda la altura del viewport
+=================================================== */
+.custom-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  background-color: #f9f9f9;
+}
+
+
+/* ==========================================
+   Botón personalizado (Contorno dorado)
+========================================== */
+.btn-outline-success {
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  font-weight: 500;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+/* ==========================================
+   Sección Hero (Portada principal)
+========================================== */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url('https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover fixed;
+  color: white;
+  padding: 180px 0 150px;
+  text-align: center;
+  position: relative;
+}
+
+/* ==========================================
+   Sección de almacenamiento
+========================================== */
+.storage-section {
+  padding: 100px 0;
+  background-color: #fff;
+  position: relative;
+}
+
+.storage-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+  opacity: 0.03;
+  z-index: 0;
+}
+
+/* ==========================================
+   Tarjetas de servicio
+========================================== */
+.storage-card {
+  background: white;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  text-align: center;
+  height: 100%;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.storage-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================
+   Ícono dentro de la tarjeta
+========================================== */
+.storage-icon {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--primary-color), var(--dark-color));
+  color: var(--accent-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  font-size: 2.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================
+   Títulos de sección
+========================================== */
+.section-title {
+  color: var(--primary-color);
+  margin-bottom: 50px;
+  display: inline-block;
+  font-weight: 700;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-color), transparent);
+  bottom: -15px;
+  left: 0;
+  border-radius: 3px;
+}
+
+/* ==========================================
+   Colores de texto personalizados
+========================================== */
+.gold-text {
+  color: var(--accent-color);
+}
+
+.text-light-gray {
+  color: var(--text-light);
+}
+
+/* ==========================================
+   Animaciones
+========================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.2s;
+}
+
+.delay-2 {
+  animation-delay: 0.4s;
+}
+
+.delay-3 {
+  animation-delay: 0.6s;
+}
+
+/* ==========================================
+   Efecto Hover con ícono de reloj
+========================================== */
+.watch-hover-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.watch-hover-effect::after {
+  content: '🕒';
+  position: absolute;
+  font-size: 1.2rem;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.watch-hover-effect:hover::after {
+  right: 15px;
+  opacity: 1;
+}
+
+/* ==========================================
+   Estilos de imagen
+========================================== */
+.rounded-img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.responsive-img {
+  width: 400px;
+  height: 400px;
+}
+
+/* ==========================================
+   Medias queries - Responsividad
+========================================== */
 @media (max-width: 992px) {
   .storage-card {
     padding: 30px 20px;

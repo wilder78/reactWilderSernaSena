@@ -1,5 +1,4 @@
 import React from "react";
-import "../Home.css";
 import { carrouselImages } from "../../../imageData/ImageData"; // Ajusta la ruta si es necesario
 
 // Información adicional para los títulos y textos

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
-import "./FloatingButton.css";
 
 const FloatingButton = () => {
   const [showModal, setShowModal] = useState(false);

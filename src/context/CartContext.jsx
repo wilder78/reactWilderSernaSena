@@ -79,6 +79,7 @@ export const CartProvider = ({ children }) => {
 };
 
 // 3. Hook personalizado para usar el contexto
+// Mueve este hook a un archivo separado (useCart.js) para evitar el warning de Fast Refresh
 export const useCart = () => {
   const context = useContext(CartContext);
   if (!context) {
@@ -86,3 +87,5 @@ export const useCart = () => {
   }
   return context;
 };
+
+export default CartContext;

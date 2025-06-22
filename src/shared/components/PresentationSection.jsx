@@ -1,5 +1,3 @@
-import "./PresentationSection.css";
-
 function PresentationSection({ title, description }) {
   return (
     <section className="presentation">

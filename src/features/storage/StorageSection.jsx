@@ -1,5 +1,4 @@
 import React from "react";
-// import "./StorageSection.css";
 import StorageServiceCard from "./StorageServiceCard";
 import StorageImageSection from "./StorageImageSection";
 import FloatingButton from "../../shared/components/floatingButton/FloatingButton";
