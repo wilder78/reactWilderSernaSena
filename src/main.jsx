@@ -5,7 +5,7 @@ import App from "./App.jsx";
 import "./index.css";
 
 // Importa el proveedor del carrito
-import { CartProvider } from "./context/CartContext";
+import { CartProvider } from "../src/shared/components/CartContext.jsx";
 
 // Validar que el elemento root exista
 const rootElement = document.getElementById("root");

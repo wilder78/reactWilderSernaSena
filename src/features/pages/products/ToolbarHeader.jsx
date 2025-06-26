@@ -1,5 +1,13 @@
 import React from "react";
 
+// Si importabas CartContext aquí o en archivos relacionados, asegúrate de actualizar la ruta de importación.
+// Por ejemplo, si antes era:
+// import { CartContext } from "../../cartContext";
+// y ahora está en shared/context/cartContext.jsx, debe ser:
+// import { CartContext } from "../../shared/context/cartContext";
+
+// Este archivo no muestra dependencias directas de CartContext, pero revisa los archivos donde lo uses y actualiza la ruta de importación según la nueva ubicación.
+
 const ToolbarHeader = ({
   title = "Explora Todos Nuestros Relojes",
   onSearch = () => {},

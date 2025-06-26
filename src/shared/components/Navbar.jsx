@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FiShoppingCart } from "react-icons/fi";
 import { BrandLogo } from "./BrandLogo";
-import { useCart } from "../../context/CartContext";
+import { useCart } from "./CartContext";
 
 const links = [
   { to: "/", label: "Inicio" },

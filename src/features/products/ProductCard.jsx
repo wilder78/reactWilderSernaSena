@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useCart } from "../../../../shared/components/CartContext"; // Asegúrate de que esta ruta sea correcta
+import { useCart } from "../../shared/components/CartContext"; // Asegúrate de que esta ruta sea correcta
 
 const ProductCard = ({
   id,
