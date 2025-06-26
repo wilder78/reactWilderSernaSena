@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/image/LogoMs2.png";
+import logo from "../../../assets/image/LogoMs2.png"; // Adjust the path to the logo based on the actual file location
 
 export const BrandLogo = () => {
   return (

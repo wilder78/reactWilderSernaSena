@@ -17,63 +17,62 @@ const FloatingButton = () => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
- const validateForm = () => {
-  const regexNombre = /^[A-Za-zÁÉÍÓÚáéíóúÑñ ]{5,30}$/;
-  const regexCedula = /^[0-9]{7,10}$/;
+  const validateForm = () => {
+    const regexNombre = /^[A-Za-zÁÉÍÓÚáéíóúÑñ ]{5,30}$/;
+    const regexCedula = /^[0-9]{7,10}$/;
 
-  if (!regexCedula.test(formData.cedula)) {
-    Swal.fire({
-      icon: "error",
-      title: "Cédula inválida",
-      text: "Debe contener entre 7 y 10 números.",
-      confirmButtonText: "Entendido",
-    });
-    return false;
-  }
+    if (!regexCedula.test(formData.cedula)) {
+      Swal.fire({
+        icon: "error",
+        title: "Cédula inválida",
+        text: "Debe contener entre 7 y 10 números.",
+        confirmButtonText: "Entendido",
+      });
+      return false;
+    }
 
-  if (!regexNombre.test(formData.nombres)) {
-    Swal.fire({
-      icon: "error",
-      title: "Nombres inválidos",
-      text: "Solo letras y espacios, entre 5 y 30 caracteres.",
-      confirmButtonText: "Entendido",
-    });
-    return false;
-  }
+    if (!regexNombre.test(formData.nombres)) {
+      Swal.fire({
+        icon: "error",
+        title: "Nombres inválidos",
+        text: "Solo letras y espacios, entre 5 y 30 caracteres.",
+        confirmButtonText: "Entendido",
+      });
+      return false;
+    }
 
-  if (!regexNombre.test(formData.apellidos)) {
-    Swal.fire({
-      icon: "error",
-      title: "Apellidos inválidos",
-      text: "Solo letras y espacios, entre 5 y 30 caracteres.",
-      confirmButtonText: "Entendido",
-    });
-    return false;
-  }
+    if (!regexNombre.test(formData.apellidos)) {
+      Swal.fire({
+        icon: "error",
+        title: "Apellidos inválidos",
+        text: "Solo letras y espacios, entre 5 y 30 caracteres.",
+        confirmButtonText: "Entendido",
+      });
+      return false;
+    }
 
-  if (!formData.email) {
-    Swal.fire({
-      icon: "error",
-      title: "Correo requerido",
-      text: "Por favor ingrese su correo electrónico.",
-      confirmButtonText: "Entendido",
-    });
-    return false;
-  }
+    if (!formData.email) {
+      Swal.fire({
+        icon: "error",
+        title: "Correo requerido",
+        text: "Por favor ingrese su correo electrónico.",
+        confirmButtonText: "Entendido",
+      });
+      return false;
+    }
 
-  if (!formData.password || formData.password.length < 6) {
-    Swal.fire({
-      icon: "error",
-      title: "Contraseña inválida",
-      text: "Debe tener al menos 6 caracteres.",
-      confirmButtonText: "Entendido",
-    });
-    return false;
-  }
+    if (!formData.password || formData.password.length < 6) {
+      Swal.fire({
+        icon: "error",
+        title: "Contraseña inválida",
+        text: "Debe tener al menos 6 caracteres.",
+        confirmButtonText: "Entendido",
+      });
+      return false;
+    }
 
-  return true;
-};
-
+    return true;
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -109,7 +108,6 @@ const FloatingButton = () => {
 
   return (
     <div className="floating-buttons">
-      {/* Menú WhatsApp */}
       <div className="whatsapp-container">
         <button
           className="whatsapp-btn"

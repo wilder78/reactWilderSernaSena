@@ -1,8 +1,14 @@
 // src/components/Footer.jsx
 import React from "react";
 import "../styles/styles.css";
-import { Link } from "react-router-dom";
 import logo from "../../assets/image/LogoMs2.png";
+import FootItem from "../hoks/footerHoks/FootItem";
+import SocialIcons from "../hoks/footerHoks/SocialIcons";
+import BrandLogo from "../hoks/footerHoks/BrandLogo";
+
+<FootItem />;
+<SocialIcons />;
+<BrandLogo />;
 
 const Footer = () => {
   const links = [
@@ -71,67 +77,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-//
-// Componente FootItem
-//
-function FootItem({ to, label }) {
-  return (
-    <div className="mb-6">
-      <Link className="text-white text-decoration-none" to={to}>
-        {label}
-      </Link>
-    </div>
-  );
-}
-
-//
-// Componente SocialIcons
-//
-function SocialIcons() {
-  const icons = [
-    {
-      href: "mailto:info@mmsrepuestos.com",
-      iconClass: "bi bi-envelope",
-      label: "Email",
-    },
-    {
-      href: "https://www.facebook.com/",
-      iconClass: "bi bi-facebook",
-      label: "Facebook",
-    },
-    {
-      href: "https://www.instagram.com/",
-      iconClass: "bi bi-instagram",
-      label: "Instagram",
-    },
-  ];
-
-  return (
-    <div className="iconos-redes d-flex flex-wrap align-items-center justify-content-center gap-3 py-3">
-      {icons.map(({ href, iconClass, label }) => (
-        <a
-          key={href}
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={label}
-          className="text-white fs-4"
-        >
-          <i className={iconClass} aria-hidden="true"></i>
-        </a>
-      ))}
-    </div>
-  );
-}
-
-//
-// Componente BrandLogo
-//
-function BrandLogo() {
-  return (
-    <a className="navbar-brand" href="/">
-      <img src={logo} alt="Logo" style={{ height: "40px" }} />
-    </a>
-  );
-}

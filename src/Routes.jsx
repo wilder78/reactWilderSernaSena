@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom"; // asegúrate de importar estos
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./shared/components/Navbar";
 import Footer from "./shared/components/Footer";
 import AboutUs from "./features/pages/aboutUs/AboutUs";
