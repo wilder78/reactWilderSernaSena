@@ -1,5 +1,5 @@
 import React from "react";
-import { almacenamiento } from "../../imageData/imageData";
+import { almacenamiento } from "../../../imageData/imageData";
 
 const features = [
   {

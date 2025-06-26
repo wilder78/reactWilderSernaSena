@@ -1,6 +1,6 @@
 // src/components/EffectCube/CubeSlider.jsx
 import React from "react";
-import { paredImages } from "../../../imageData/imageData";
+import { paredImages } from "../../../../imageData/imageData";
 
 export const CubeSlider = () => (
   <div className="swiper-wrapper-container">

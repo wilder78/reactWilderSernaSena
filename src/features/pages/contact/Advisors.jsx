@@ -3,7 +3,7 @@ import {
   asesorCentro,
   asesorNorte,
   asesorSur,
-} from "../../imageData/imageData";
+} from "../../../imageData/imageData";
 
 const advisorsList = [
   {

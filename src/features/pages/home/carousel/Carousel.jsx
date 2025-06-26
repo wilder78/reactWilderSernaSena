@@ -1,5 +1,5 @@
 import React from "react";
-import { carrouselImages } from "../../../imageData/imageData"; // Ajusta la ruta si es necesario
+import { carrouselImages } from "../../../../imageData/imageData"; // Ajusta la ruta si es necesario
 
 // Información adicional para los títulos y textos
 const slideInfo = [

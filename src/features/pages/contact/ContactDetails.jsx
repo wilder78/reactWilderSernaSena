@@ -1,5 +1,5 @@
 import React from "react";
-import LocationMap from "../../shared/components/LocationMap";
+import LocationMap from "../../../shared/components/LocationMap";
 
 const ContactDetails = () => {
   return (

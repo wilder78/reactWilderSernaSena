@@ -3,7 +3,8 @@ import HeroSection from "./HeroSection";
 import AboutContent from "./AboutContent";
 import SectionBlock from "./SectionBlock";
 import VisionSection from "./VisionSection";
-import FloatingButton from "../../shared/components/floatingButton/FloatingButton";
+import FloatingButton from "../../../shared/components/floatingButton/FloatingButton";
+// import FloatingButton from "../../../../shared/components/floatingButton/FloatingButton";
 
 const AboutUs = () => {
   return (

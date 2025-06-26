@@ -1,16 +1,16 @@
 import React from "react";
 import Carousel from "./carousel/Carousel";
-import { SubTitle } from "../../shared/components/SubTitle";
-import PresentationSection from "../../shared/components/PresentationSection";
 import { EffectCube } from "./EffectCube/EffectCube";
-import BrandAndPhoto from "../../shared/components/BrandAndPhoto";
 import {
   mechanicImages,
   cuarzoImages,
   smartWatchImages,
-} from "../../imageData/imageData";
-import Form from "../../shared/components/Form";
-import FloatingButton from "../../shared/components/floatingButton/FloatingButton";
+} from "../../../imageData/imageData";
+import Form from "../../../shared/components/Form";
+import FloatingButton from "../../../shared/components/floatingButton/FloatingButton";
+import { SubTitle } from "../../../shared/components/SubTitle";
+import PresentationSection from "../../../shared/components/PresentationSection";
+import BrandAndPhoto from "../../../shared/components/BrandAndPhoto";
 
 function Home() {
   return (

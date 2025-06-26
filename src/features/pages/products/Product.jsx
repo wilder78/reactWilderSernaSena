@@ -1,8 +1,8 @@
-import FloatingButton from "../../shared/components/floatingButton/FloatingButton";
+import FloatingButton from "../../../shared/components/floatingButton/FloatingButton";
 import ToolbarHeader from "./ToolbarHeader";
-import SidebarFilter from "./SidebarFilter/SidebarFilter";
+import SidebarFilter from "./sidebarFilter/SidebarFilter";
 import RecommendedProducts from "./recommendedProducts/RecommendedProducts";
-import Form from "../../shared/components/Form";
+import Form from "../../../shared/components/Form";
 
 export const Product = () => {
   return (

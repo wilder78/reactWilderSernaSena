@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./Services.css"; // Import your CSS styles
-import { repairAndAdvice } from "../../imageData/imageData";
-import FloatingButton from "../../shared/components/floatingButton/FloatingButton";
-import Form from "../../shared/components/Form";
+// import "./Services.css"; // Import your CSS styles
+import { repairAndAdvice } from "../../../imageData/imageData";
+import FloatingButton from "../../../shared/components/floatingButton/FloatingButton";
+import Form from "../../../shared/components/Form";
 
 const Services = () => {
   useEffect(() => {

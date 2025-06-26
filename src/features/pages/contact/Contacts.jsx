@@ -1,7 +1,7 @@
 import React from "react";
 import ContactDetails from "./ContactDetails";
 import Advisors from "./Advisors";
-import FloatingButton from "../../shared/components/floatingButton/FloatingButton";
+import FloatingButton from "../../../shared/components/floatingButton/FloatingButton";
 
 const Contacts = () => {
   return (

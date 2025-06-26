@@ -2,12 +2,12 @@ import React from "react";
 import { Routes, Route } from "react-router-dom"; // asegúrate de importar estos
 import Navbar from "./shared/components/Navbar";
 import Footer from "./shared/components/Footer";
-import Home from "./features/home/Home";
-import AboutUs from "./features/aboutUs/AboutUs";
-import StorageSection from "./features/storage/StorageSection";
-import Contacts from "./features/contact/Contacts";
-import { Product } from "./features/products/Product";
-import Services from "./features/services/Services";
+import AboutUs from "./features/pages/aboutUs/AboutUs";
+import Contacts from "./features/pages/contact/Contacts";
+import { Product } from "./features/pages/products/Product";
+import Services from "./features/pages/services/Services";
+import Home from "./features/pages/home/Home";
+import StorageSection from "./features/pages/storage/StorageSection";
 
 function AppRoutes() {
   return (
