@@ -1,7 +1,7 @@
 // src/components/CartIcon.jsx
 import React from "react";
 import { FiShoppingCart } from "react-icons/fi";
-import { useCart } from "../../hooks/cartContextHooks/useCart"; // ✅ Ruta correcta al archivo useCart.js
+import { useCart } from "../../components/CartContext";
 
 function CartIcon({ onClick }) {
   const { cartCount } = useCart();

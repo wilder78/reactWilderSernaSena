@@ -2,9 +2,9 @@
 import React from "react";
 import "../styles/styles.css";
 import logo from "../../assets/image/LogoMs2.png";
-import FootItem from "../hoks/footerHoks/FootItem";
-import SocialIcons from "../hoks/footerHoks/SocialIcons";
-import BrandLogo from "../hoks/footerHoks/BrandLogo";
+import FootItem from "../hooks/footerHooks/FootItem";
+import SocialIcons from "../hooks/footerHooks/SocialIcons";
+import BrandLogo from "../hooks/footerHooks/BrandLogo";
 
 <FootItem />;
 <SocialIcons />;
